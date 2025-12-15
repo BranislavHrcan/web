@@ -1,0 +1,104 @@
+html{
+    overflow: hidden;
+}
+body{
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(45deg, rgba(0,123,255,0.8),rgba(108,117,125,0.8));
+}
+.navbar{
+    background-color: #005689;
+    padding: 10px;
+    width: 100%;
+    
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 0px 25px;
+    justify-content: center;
+}
+.navbar li{
+    margin: 0px 25px;
+    border: 2px solid rgb(44, 0, 124);
+    padding: 5px 25px;
+}
+.navbar li:hover{
+    background-color: rgba(255, 255, 255, 0.238);
+    box-shadow: 0px 10px 25px blue;
+    position: relative;
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+h1{
+    text-align: center;
+}
+img{
+    width: 24.8%;
+    height: 400px;
+    display: inline-block;
+}
+.wrapper{
+    width: 100%;
+    max-width: 1200px;
+    height: 550px;
+    margin: 0 auto;
+    position: relative;
+}
+.slike{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.slika{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: animacija 20s infinite ease-in-out;
+}
+@keyframes animacija{
+    0% {opacity: 1;}
+    20% {opacity: 1;}
+    25% {opacity: 0;}
+    95% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.slika:nth-child(1){
+    animation-delay: 0s;
+}
+.slika:nth-child(2){
+    animation-delay: 5s;
+}
+.slika:nth-child(3){
+    animation-delay: 10s;
+}
+.slika:nth-child(4){
+    animation-delay: 15s;
+}
+@media screen and (max-width: 700px) {
+    .navbar{
+        width: 100%;
+        margin:0;
+        padding: 0;
+    }
+    .navbar ul{
+        
+        display: block;
+        text-align: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .navbar li{
+        
+        margin: 0;
+    }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon"  href="../images/slika-stranice.png">
+	<title>Baki-Fitness</title>
+</head>
+<body>
+
+<ul>
+
+	<li> <a href="../index.html"> Home </a></li>
+	<li><a href="clanovi.html"> Clanovi tima</a></li>
+	<li><a href="galerija.html"> Galerija </a></li>
+	<li><a href="kontakt.php"> Kontakt </a></li>
+	<li><a href="#"> Raspored grupnih treninga </a></li>
+</ul>
+<h1>Raspored grupnih treninga</h1>
+
+<table border="1">
+	<tr>
+		<td>Vreme</td>
+		<td>Ponedeljak</td>
+		<td>Utorak</td>
+		<td>Sreda</td>
+		<td>Cetvrtak</td>
+		<td>Petak</td>
+		<td>Subota</td>
+		<td>Nedelja</td>
+	</tr>
+	<tr>
+		<td>9:30-11:00</td>
+		<td>Marko Marković <br> Nikola Nikolić</td>
+		<td>Nikola Nikolić</td>
+		<td>Višnja Višnjić</td>
+		<td align="center"> /</td>
+		<td>Marko Marković</td>
+		<td rowspan="2">Nikola Nikolić</td>
+		<td align="center"> / </td>
+	</tr>
+	<tr><td>11:30-13:00</td>
+		<td> Višnja Višnjić</td>
+		<td align="center">/</td>
+		<td>Marko Marković</td>
+		<td rowspan="2">Višnja Višnjić</td>
+		<td>Nikola Nikolić</td>
+		
+		<td align="center"> / </td></tr>
+	<tr><td>15:00-16:30</td>
+		<td>Marko Marković</td>
+		<td>Marko Marković</td>
+		<td align="center">/</td>
+		<td>Višnja Višnjić</td>
+		<td rowspan="2">Marko Marković</td>
+		
+		<td align="center"> / </td></tr>
+	<tr><td>17:00-18:30</td>
+		<td>Višnja Višnjić</td>
+		<td>Nikola Nikolić</td>
+		<td>Višnja Višnjić</td>
+		<td>Marko Marković <br> Nikola Nikolić</td>
+		<td align="center"> /	</td>
+		
+		<td align="center"> / </td></tr>
+	</table>
+<form>
+	<h2>Rezervišite svoje mesto za grupni trening.</h2>
+	<p>Ime:</p>
+<input type="text" required>
+<p>Prezime:</p>
+<input type="text" required>
+<p>Kontakt telefon</p>
+<input type="tel" placeholder="+381" required minlength="8"> <br> 
+<p>Molimo vas čekirajte svoj pol</p>
+<input type="radio" name="Pol" required> Muški <br>
+<input type="radio" name="Pol"> Ženski
+<p>Koje vreme vam odgovara</p>
+<input type="checkbox" name="Vreme" > 9:30-11:00
+<input type="checkbox" name="Vreme" > 11:30-13:00 <br>
+<input type="checkbox" name="Vreme" > 15:00-16:30
+<input type="checkbox" name="Vreme" > 17:00-18:30
+
+ <br> <br>
+<input type="submit" value="Potvrdi svoju rezervaciju">
+
+</form>
+
+</body>
+</html>

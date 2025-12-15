@@ -1,0 +1,67 @@
+html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar{
+    background-color: #005689;
+    padding: 10px;
+    width: 100%;
+    
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 0px 25px;
+    justify-content: center;
+
+}
+.navbar li{
+    margin: 0px 25px;
+    border: 2px solid rgb(44, 0, 124);
+    padding: 5px 25px;
+}
+.navbar li:hover{
+    background-color: rgba(255, 255, 255, 0.238);
+    box-shadow: 0px 10px 25px blue;
+    position: relative;
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    
+}
+.sredinatekst{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    font-size: 40px;
+}
+.slika{
+    opacity: 0.8;
+}
+@media screen and (max-width: 700px) {
+    .navbar{
+        width: 100%;
+        margin:0;
+        padding: 0;
+    }
+    .navbar ul{
+        
+        display: block;
+        text-align: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .navbar li{
+        
+        margin: 0;
+    }
+}
