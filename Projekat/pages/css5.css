@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #3a8dff, #5f9ea0);
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+.navbar{
+    background-color: #005689;
+    padding: 10px;
+    width: 100%;
+    
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 0px 25px;
+    justify-content: center;
+}
+.navbar li{
+    margin: 0px 25px;
+    border: 2px solid rgb(44, 0, 124);
+    padding: 5px 25px;
+}
+.navbar li:hover{
+    background-color: rgba(255, 255, 255, 0.238);
+    box-shadow: 0px 10px 25px blue;
+    position: relative;
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+/* Omotac za formu */
+.search {
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(0, 0, 50, 0.7);
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.search input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    margin-right: 10px;
+}
+
+.search button {
+    padding: 10px 15px;
+    background: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.search button:hover {
+    background: #0056b3;
+}
+
+/* Tabela rezultata */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    color: #fff;
+}
+
+th {
+    background: rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+}
+
+tr:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
